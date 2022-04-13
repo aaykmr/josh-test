@@ -18,7 +18,7 @@ export default function Nav(){
                         <li className="nav-item mr-2">
                             <Link className="nav-link" href="Documentation">Examples</Link>
                         </li>
-                        <li className="nav-item mr-2">
+                        <li className="nav-item ">
                             <Link className="nav-link" href="Documentation">Deploy</Link>
                         </li>
                     </ul>
