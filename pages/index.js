@@ -5,8 +5,8 @@ import Nav from '../components/Nav'
 export default function Home() {
   return (
     <div className="container">
+      <Nav />
       <main>
-        <Nav />
         <h1 className="title">
           Created with <a href="https://nextjs.org">Next.js!</a>
         </h1>

@@ -6,8 +6,8 @@ export default function Documentation(){
     return(
         <>   
         <div className="container">
+            <Nav />
             <main>      
-                <Nav />
                 <h1 className="card">Documentation</h1>
             </main>
         </div>
