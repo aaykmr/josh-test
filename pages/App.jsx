@@ -18,7 +18,7 @@ export default function App(){
             />
             <h1>Documentation</h1>
             <Link href="/">
-                Home
+                <button>Home</button>
             </Link>
         </>
     )
