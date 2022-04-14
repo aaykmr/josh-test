@@ -6,7 +6,7 @@ export default function Cars({car}){
 
     return (
     <>
-        <h1>This is a {id}</h1>
+        <h1>{`This is a ${id}`}</h1>
         <img src={car.image}></img>
     </>
     )
@@ -23,6 +23,7 @@ export async function getStaticProps({params}){
 
 export async function getStaticPaths(){
     const req = await fetch('http://localhost:3000/cars.json')
+    console.log(req);
     const data = await req.json();
 
     const paths = data.map(car => {
