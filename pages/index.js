@@ -17,9 +17,9 @@ export default function Home() {
 
         <div className="grid">
           <Link href="documentation" >
-          <div className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <div className="card">
+              <h3>Documentation &rarr;</h3>
+              <p>Find in-depth information about Next.js features and API.</p>
             </div>
           </Link>
 

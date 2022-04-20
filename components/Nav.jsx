@@ -27,6 +27,9 @@ export default function Nav(){
                     </ul>
                 </div>
             </nav>
+            <button className="btn-primary rounded">
+                Login
+            </button>
         </>
     )
 }

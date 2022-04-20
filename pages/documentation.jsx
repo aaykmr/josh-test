@@ -1,14 +1,16 @@
 import Link from "next/link";
-import react from "react";
+import React from "react";
 import Nav from "../components/Nav";
+import Loader from "../components/Loader";
 
 export default function Documentation(){
     return(
         <>   
         <div className="container">
             <Nav />
-            <main>      
+            <main>
                 <h1 className="card">Documentation</h1>
+                <Loader show={true} />
             </main>
         </div>
         </>
