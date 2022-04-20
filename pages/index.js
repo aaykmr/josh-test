@@ -5,7 +5,6 @@ import Nav from '../components/Nav'
 export default function Home() {
   return (
     <div className="container">
-      <Nav />
       <main>
         <h1 className="title">
           Created with <a href="https://nextjs.org">Next.js!</a>
@@ -16,17 +15,19 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <Link href="documentation" >
+        <Link href="documentation" >
             <div className="card">
               <h3>Documentation &rarr;</h3>
               <p>Find in-depth information about Next.js features and API.</p>
             </div>
           </Link>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          
+          <Link href="enter" >
+            <div className="card">
+              <h3>Enter &rarr;</h3>
+              <p>Enter and Login</p>
+            </div>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"

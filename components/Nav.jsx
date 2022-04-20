@@ -1,9 +1,13 @@
 import Link from "next/link"
+import toast from "react-hot-toast"
+import { UserContext } from "../lib/context";
+import { useContext } from "react";
 
-export default function Nav(){
+export default function Nav({logged}){
+    const {user, username} = useContext(UserContext);
     return(
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light mt-1 rounded">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light mt-1 rounded w-100">
                 <button className="navbar-toggler align-items-end" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -16,7 +20,7 @@ export default function Nav(){
                             <Link className="nav-link" href="/documentation">Documentation</Link>
                         </li>
                         <li className="nav-item mr-2">
-                            <Link className="nav-link" href="/documentation">Learn</Link>
+                            <Link className="nav-link" href="/enter">Enter</Link>
                         </li>
                         <li className="nav-item mr-2">
                             <Link className="nav-link" href="/documentation">Examples</Link>
@@ -26,10 +30,16 @@ export default function Nav(){
                         </li>
                     </ul>
                 </div>
+                {!logged?
+                    <button className="btn-primary rounded m-2" onClick={()=>toast.success("Hello Toast!")}>
+                        Login
+                    </button>:
+                    <button className="btn-secondary rounded m-2">
+                        Logout
+                    </button>
+                }
             </nav>
-            <button className="btn-primary rounded">
-                Login
-            </button>
+            
         </>
     )
 }

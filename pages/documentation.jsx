@@ -7,7 +7,6 @@ export default function Documentation(){
     return(
         <>   
         <div className="container">
-            <Nav />
             <main>
                 <h1 className="card">Documentation</h1>
                 <Loader show={true} />
