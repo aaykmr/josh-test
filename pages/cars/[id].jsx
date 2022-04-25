@@ -25,7 +25,6 @@ export async function getStaticPaths(){
     const req = await fetch('http://localhost:3000/cars.json')
     console.log(req);
     const data = await req.json();
-
     const paths = data.map(car => {
         return {params :{id:car}}
     })

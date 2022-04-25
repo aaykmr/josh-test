@@ -3,7 +3,7 @@ import toast from "react-hot-toast"
 import { UserContext } from "../lib/context";
 import { useContext } from "react";
 
-export default function Nav({logged}){
+export default function Nav(){
     const {user, username} = useContext(UserContext);
     return(
         <>
@@ -30,13 +30,18 @@ export default function Nav({logged}){
                         </li>
                     </ul>
                 </div>
-                {!logged?
-                    <button className="btn-primary rounded m-2" onClick={()=>toast.success("Hello Toast!")}>
-                        Login
-                    </button>:
-                    <button className="btn-secondary rounded m-2">
-                        Logout
-                    </button>
+                {!username?
+                    <Link href="/enter">
+                        <button className="btn-primary rounded m-2">
+                            Login
+                        </button>
+                    </Link>
+                        :
+                    <Link href="/enter">
+                        <button className="btn-secondary rounded m-2">
+                            Logout
+                        </button>
+                    </Link>
                 }
             </nav>
             

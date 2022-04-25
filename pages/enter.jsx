@@ -6,10 +6,6 @@ import debounce from 'lodash.debounce';
 
 export default function Enter(props) {
   const { user, username } = useContext(UserContext);
-
-  // 1. user signed out <SignInButton />
-  // 2. user signed in, but missing username <UsernameForm />
-  // 3. user signed in, has username <SignOutButton />
   return (
     <main>
       {user ? !username ? <UsernameForm /> : <SignOutButton /> : <SignInButton />}
@@ -24,15 +20,15 @@ function SignInButton() {
   };
 
   return (
-      <button className="btn-google" onClick={signInWithGoogle}>
-        <img src={'/google.png'} width="30px" /> Sign in with Google
+      <button className="btn" onClick={signInWithGoogle}>
+        <img src={'/google.png'} className="p-0" width="30px" /> Sign in with Google
       </button>
   );
 }
 
 // Sign out button
 function SignOutButton() {
-  return <button onClick={() => auth.signOut()}>Sign Out</button>;
+  return <button className="btn-outline-danger rounded" onClick={() => auth.signOut()}>Sign Out</button>;
 }
 
 // Username form
