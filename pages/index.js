@@ -15,17 +15,17 @@ export default function Home() {
         </p>
 
         <div className="grid">
-        <Link href="documentation" >
+        <Link href="feed" >
             <div className="card">
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
+              <h3>Feed &rarr;</h3>
+              <p>Posts</p>
             </div>
           </Link>
           
           <Link href="enter" >
             <div className="card">
               <h3>Enter &rarr;</h3>
-              <p>Enter and Login</p>
+              <p>Login</p>
             </div>
           </Link>
 
