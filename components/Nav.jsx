@@ -31,17 +31,28 @@ export default function Nav(){
                     </ul>
                 </div>
                 {!username?
+                    
                     <Link href="/enter">
                         <button className="btn-primary rounded m-2">
                             Login
                         </button>
                     </Link>
-                        :
+                 :
+                 <>
+                    <Link href="/enter">
+                        <button className="btn-primary rounded m-2">
+                            Write Posts
+                        </button>
+                    </Link>
                     <Link href="/enter">
                         <button className="btn-secondary rounded m-2">
                             Logout
                         </button>
                     </Link>
+                    <Link href={`/${username}`}>
+                        <img src={user.photoURL} width="40px" className="rounded-circle m-2"></img>
+                    </Link>
+                </>
                 }
             </nav>
             
