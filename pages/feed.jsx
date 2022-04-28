@@ -4,7 +4,7 @@ import { firestore, fromMillis, postToJSON } from "../lib/firebase";
 import { useState } from "react";
 import Metatags from "../components/Metatags";
 // Max post to query per page
-const LIMIT = 1;
+const LIMIT = 10;
 
 export async function getServerSideProps(context) {
   const postsQuery = firestore
@@ -54,7 +54,7 @@ export default function Feed(props) {
   return (
     <>
       <div className="container">
-        <main>
+        <main className="w-75">
           <Metatags title="Post Feed" />
           <PostFeed posts={posts} />
 

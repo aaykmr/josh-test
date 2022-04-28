@@ -127,6 +127,10 @@
     line-height: 1.5;
   }
 
+  .postlink{
+    cursor: pointer;
+  }
+
   .logo {
     height: 1em;
   }

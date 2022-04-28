@@ -17,11 +17,11 @@ function PostItem({ post, admin = false }) {
     <div className="widecard">
       <Link href={`/${post.username}`}>
         <a>
-          <strong>By @{post.username}</strong>
+          <strong className="postlink">By @{post.username}</strong>
         </a>
       </Link>
 
-      <Link href={`/${post.username}/${post.slug}`}>
+      <Link className="postlink" href={`/${post.username}/${post.slug}`}>
         <h2>
           <a>{post.title}</a>
         </h2>

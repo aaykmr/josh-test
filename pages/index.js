@@ -10,10 +10,6 @@ export default function Home() {
           Created with <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
         <div className="grid">
           <Link href="feed">
             <div className="card">

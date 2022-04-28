@@ -53,9 +53,9 @@ export default function Nav() {
           </Link>
         ) : (
           <>
-            <Link href="/enter">
+            <Link href="/writepost">
               <button className="btn btn-primary rounded m-2">
-                Write Posts
+                Write Post
               </button>
             </Link>
             <Link href="/enter">
