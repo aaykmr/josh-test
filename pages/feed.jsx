@@ -4,7 +4,7 @@ import { firestore, fromMillis, postToJSON } from "../lib/firebase";
 import { useState } from "react";
 import Metatags from "../components/Metatags";
 // Max post to query per page
-const LIMIT = 10;
+const LIMIT = 5;
 
 export async function getServerSideProps(context) {
   const postsQuery = firestore
