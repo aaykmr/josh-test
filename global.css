@@ -99,6 +99,15 @@
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
   }
+  .widecard {
+    padding: 2rem;
+    margin: 1rem 0;
+    width: 90%;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 24px #dbdbdb;
+    border-radius: 8px;
+  }
 
   .card:hover,
   .card:focus,

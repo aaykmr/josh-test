@@ -36,8 +36,8 @@ export default function Nav() {
               </Link>
             </li>
             <li className="nav-item mr-2">
-              <Link className="nav-link" href="/">
-                Examples
+              <Link className="nav-link" href="/admin">
+                Admin
               </Link>
             </li>
             <li className="nav-item">

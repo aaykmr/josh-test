@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Nav from '../components/Nav'
+import Head from "next/head";
+import Link from "next/link";
+import Nav from "../components/Nav";
 
 export default function Home() {
   return (
@@ -15,27 +15,26 @@ export default function Home() {
         </p>
 
         <div className="grid">
-        <Link href="feed" >
+          <Link href="feed">
             <div className="card">
               <h3>Feed &rarr;</h3>
               <p>Posts</p>
             </div>
           </Link>
-          
-          <Link href="enter" >
+
+          <Link href="enter">
             <div className="card">
               <h3>Enter &rarr;</h3>
               <p>Login</p>
             </div>
           </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Link href="admin">
+            <div className="card">
+              <h3>Admin &rarr;</h3>
+              <p>Admin and posts</p>
+            </div>
+          </Link>
 
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -55,10 +54,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
     </div>
-  )
+  );
 }
